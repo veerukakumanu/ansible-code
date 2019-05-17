@@ -5,8 +5,8 @@
  - name: This playbook will test forloop
    hosts: webservers
    vars:
-     foobar_database: mydb
-     foobar_deploy_user: admin
+     database: mydb
+     user: admin
 
 # TASK SECTION
 
@@ -15,5 +15,5 @@
        fail: msg="{{ item }} is not defined"
        when: item not in vars
        loop:
-         - foobar_database
-         - foobar_deploy_user
+         - database
+         - user

@@ -10,6 +10,6 @@
      - name: To create 3 files
        file:
          path: /opt/{{ item }}
-         state: touch
+         state: file
          mode: 0600
        with_items: "{{ myfiles }}"

@@ -6,10 +6,16 @@
    hosts: webservers
    vars:
      mypackage: unzip
+     myfile: helloworld.txt
 
 # TASK SECTION
    tasks:
      - name: To install package named "{{ mypackage }}"
        yum:
          name: "{{ mypackage }}"
-         state: installed
+         state: absent
+
+     - name: To create a file named "{{ myfile }}"
+       file:
+         path: /opt/"{{ myfile }}"
+         state: touch
