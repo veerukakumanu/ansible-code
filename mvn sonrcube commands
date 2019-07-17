@@ -1,0 +1,525 @@
+Maven and SonarQube Integration
+cd /opt/
+    2  ls
+    3  pwd
+    4  cd apache-maven-3.6.1
+    5  ls
+    6  cd PetClinic/
+    7  ls
+    8  cd pwd
+    9  cd ..
+   10  pwd
+   11  ls
+   12  cd PetClinic/
+   13  ls
+   14  mvn clean
+   15  mvn compile
+   16  mvn package
+   17  pwd
+   18  ls
+   19  cd target
+   20  ls
+   21  pwd
+   22  cd /opt
+   23  wget http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.43/bin/apache-tomcat-8.5.43.tar.gz
+   24  pwd
+   25  ls
+   26  tar xfv apache-tomcat-8.5.43.tar.gz
+   27  ls
+   28  cd apache-tomcat-8.5.43
+   29  pwd
+   30  ls
+   31  cd ..
+   32  ls
+   33  cp petclinic.war /opt/apache-tomcat-8.5.43/webapps
+   34  cd /opt/apache-tomcat-8.5.43
+   35  ls
+   36  cd webapps/
+   37  ls
+   38  cd ../bin
+   39  ./shutdown.sh
+   40  ./startup.sh
+   41  ls
+   42  ./shutdown.sh
+   43  ./startup.sh
+   44  ls
+   45  cd ..
+   46  ls
+   47  cd webapps/
+   48  ls
+   49  rm rf petclinic
+   50  rm rf petclinic.war
+   51  ls
+   52  cd ..
+   53  ls
+   54  cd ..
+   55  ls
+   56  rm -rf petclinic.war
+   57  cd apache-maven-3.6.1
+   58  ls
+   59  cd pe
+   60  cd PetClinic/
+   61  ls
+   62  cd target/
+   63  ls
+   64  cd /opt
+   65  yum install java-1.8.0-openjdk -y
+   66  yum install git -y
+   67  yum install wget
+   68  cd /opt/
+   69  wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+   70  ls
+   71  tar xfv apache-maven-3.6.1-bin.tar.gz
+   72  ls
+   73  cd apache-maven-3.6.1
+   74  export M2_HOME=/opt/apache-maven-3.6.1
+   75  export PATH=$PATH:$M2_HOME/bin
+   76  mvn --version
+   77  git clone https://github.com/gkdevops/maven-sample-code.git
+   78  ls
+   79  cd maven-sample-code/
+   80  yum install tree -y
+   81  mvn compile
+   82  mvn clean
+   83  mvn compile
+   84  mvn clear
+   85  mvn clean
+   86  mvn packege
+   87  mvn clear
+   88  mvn clean
+   89  pwd
+   90  ls
+   91  vi pom.xml
+   92  cat Maven_Commands.txt
+   93  ls
+   94  pwd
+   95  mvn test
+   96  history
+   97  cd
+   98  ls -a
+   99  vi .bash_profile
+  100  cd /opt/
+  101  ls
+  102  cd apache-maven-3.6.1
+  103  ls
+  104  cd maven-sample-code/
+  105  mvn complie
+  106  mvn test
+  107  yum install java-1.8.0-openjdk-devel
+  108  mvn test
+  109  mvn compile
+  110  mvn package
+  111  ls
+  112  cd target/
+  113  ls
+  114  pwd
+  115  cd classes/
+  116  ls
+  117  cd ..
+  118  ls
+  119  cd ..
+  120  ls
+  121  cd src/
+  122  ls
+  123  cd test/
+  124  ls
+  125  cd ..
+  126  cd target/
+  127  ls
+  128  cd ..
+  129  mvn clean
+  130  mvn complie
+  131  mvn clean
+  132  mvn complie
+  133  mvn clean
+  134  mvn package
+  135  ls
+  136  cd target/
+  137  ls
+  138  cd ..
+  139  c
+  140  ls
+  141  cd ..
+  142  ls
+  143  https://github.com/gkdevops/PetClinic.git
+  144  ls
+  145  git clone https://github.com/gkdevops/PetClinic.git
+  146  ls
+  147  cd PetClinic/
+  148  ls
+  149  mvn package
+  150  cd target/
+  151  ls
+  152  get petclinic.war
+  153  git push petclinic.war
+  154  git init
+  155  mkdir git
+  156  git init
+  157  cd g
+  158  ls
+  159  cd git
+  160  git init
+  161  mv /opt/apache-maven-3.6.1/PetClinic/target/petclinic.war .
+  162  ls
+  163  git commit -m "First commit"
+  164  git remote add origin https://github.com/veerukakumanu/helloworldproc.git
+  165  git push origin master
+  166  ls
+  167  mv petclinic.war /home/centos/
+  168  cd
+  169  su centos
+  170  ls
+  171  cd /opt/
+  172  ls
+  173  cd apache-maven-3.6.1
+  174  ls
+  175  cd PetClinic/
+  176  ls
+  177  cd target/
+  178  ls
+  179  rm -rf petclinic.war
+  180  mvn clean
+  181  mvn test
+  182  cd ..
+  183  mvn clean
+  184  mvn compile
+  185  mvn package
+  186  cd target/
+  187  ls
+  188  cd ..
+  189  cd
+  190  cd /opt/
+  191  ls
+  192  cd apache-tomcat-8.5.43
+  193  ls
+  194  cd webapps/
+  195  ls
+  196  mv /opt/apache-maven-3.6.1/PetClinic/target/petclinic.war .
+  197  ls
+  198  cd ..
+  199  ls
+  200  cd bin/
+  201  ls
+  202  ./shutdown.sh
+  203  ./startup.sh
+  204  cd /opt/
+  205  ls
+  206  cd sonarqube/
+  207  ls
+  208  yum install docker-ee-cli-18.09.7-3.el7.x86_64.rpm
+  209  ls
+  210  yum install docker-ee-18.09.7-3.el7.x86_64.rpm
+  211  ls
+  212  yum unsinstall containerd.io-1.2.0-3.el7.x86_64.rpm
+  213  yum uninstall containerd.io-1.2.0-3.el7.x86_64.rpm
+  214  yum clean
+  215  yum
+  216  ls
+  217  docker image
+  218  docker images
+  219  systemctl start docker
+  220  systemctl enable docker
+  221  lls
+  222  ls
+  223  rm -rf *
+  224  ls
+  225  wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
+  226  yum install containerd.io-1.2.6-3.3.el7.x86_64.rpm
+  227  wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-18.09.7-3.el7.x86_64.rpm
+  228  yum install docker-ee-18.09.7-3.el7.x86_64.rpm
+  229  wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-cli-18.09.7-3.el7.x86_64.rpm
+  230  ls
+  231  yum install docker-ee-cli-18.09.7-3.el7.x86_64.rpm
+  232  s
+  233  ls
+  234  yum install docker-ee-cli-18.09.7-3.el7.x86_64.rpm -y
+  235  #wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-cli-18.09.6-3.el7.x86_64.rpmhttps://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-cli-18.09.6-3.el7.x86_64.rpm\
+  236  wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-cli-18.09.6-3.el7.x86_64.rpm
+  237  ls
+  238  yum install docker-ee-cli-18.09.6-3.el7.x86_64.rpm
+  239  yum
+  240  yum reinstall docker-ee-cli-18.09.7-3.el7.x86_64.rpm
+  241  ls
+  242  rm rf *
+  243  y
+  244  ls
+  245  systemctl enable docker
+  246  systemctl start docker
+  247  docker pull sonarqube:latest
+  248  docker container run -d -p 9000:9000 --name sonarqube sonarqube:latest
+  249  docker containers
+  250  docker ps -a
+  251  cd ..
+  252  ls
+  253  cd apache-maven-3.6.1
+  254  ls
+  255  cd PetClinic/
+  256  mvn sonar:sonar   -Dsonar.projectKey=petclinic   -Dsonar.host.url=http://ec2-34-226-121-234.compute-1.amazonaws.com:9000   -Dsonar.login=bf688df5f55bfb1ac6a1fde1d96273a381885714
+  257  historycd /opt/
+    2  ls
+    3  pwd
+    4  cd apache-maven-3.6.1
+    5  ls
+    6  cd PetClinic/
+    7  ls
+    8  cd pwd
+    9  cd ..
+   10  pwd
+   11  ls
+   12  cd PetClinic/
+   13  ls
+   14  mvn clean
+   15  mvn compile
+   16  mvn package
+   17  pwd
+   18  ls
+   19  cd target
+   20  ls
+   21  pwd
+   22  cd /opt
+   23  wget http://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.43/bin/apache-tomcat-8.5.43.tar.gz
+   24  pwd
+   25  ls
+   26  tar xfv apache-tomcat-8.5.43.tar.gz
+   27  ls
+   28  cd apache-tomcat-8.5.43
+   29  pwd
+   30  ls
+   31  cd ..
+   32  ls
+   33  cp petclinic.war /opt/apache-tomcat-8.5.43/webapps
+   34  cd /opt/apache-tomcat-8.5.43
+   35  ls
+   36  cd webapps/
+   37  ls
+   38  cd ../bin
+   39  ./shutdown.sh
+   40  ./startup.sh
+   41  ls
+   42  ./shutdown.sh
+   43  ./startup.sh
+   44  ls
+   45  cd ..
+   46  ls
+   47  cd webapps/
+   48  ls
+   49  rm rf petclinic
+   50  rm rf petclinic.war
+   51  ls
+   52  cd ..
+   53  ls
+   54  cd ..
+   55  ls
+   56  rm -rf petclinic.war
+   57  cd apache-maven-3.6.1
+   58  ls
+   59  cd pe
+   60  cd PetClinic/
+   61  ls
+   62  cd target/
+   63  ls
+   64  cd /opt
+   65  yum install java-1.8.0-openjdk -y
+   66  yum install git -y
+   67  yum install wget
+   68  cd /opt/
+   69  wget http://mirrors.estointernet.in/apache/maven/maven-3/3.6.1/binaries/apache-maven-3.6.1-bin.tar.gz
+   70  ls
+   71  tar xfv apache-maven-3.6.1-bin.tar.gz
+   72  ls
+   73  cd apache-maven-3.6.1
+   74  export M2_HOME=/opt/apache-maven-3.6.1
+   75  export PATH=$PATH:$M2_HOME/bin
+   76  mvn --version
+   77  git clone https://github.com/gkdevops/maven-sample-code.git
+   78  ls
+   79  cd maven-sample-code/
+   80  yum install tree -y
+   81  mvn compile
+   82  mvn clean
+   83  mvn compile
+   84  mvn clear
+   85  mvn clean
+   86  mvn packege
+   87  mvn clear
+   88  mvn clean
+   89  pwd
+   90  ls
+   91  vi pom.xml
+   92  cat Maven_Commands.txt
+   93  ls
+   94  pwd
+   95  mvn test
+   96  history
+   97  cd
+   98  ls -a
+   99  vi .bash_profile
+  100  cd /opt/
+  101  ls
+  102  cd apache-maven-3.6.1
+  103  ls
+  104  cd maven-sample-code/
+  105  mvn complie
+  106  mvn test
+  107  yum install java-1.8.0-openjdk-devel
+  108  mvn test
+  109  mvn compile
+  110  mvn package
+  111  ls
+  112  cd target/
+  113  ls
+  114  pwd
+  115  cd classes/
+  116  ls
+  117  cd ..
+  118  ls
+  119  cd ..
+  120  ls
+  121  cd src/
+  122  ls
+  123  cd test/
+  124  ls
+  125  cd ..
+  126  cd target/
+  127  ls
+  128  cd ..
+  129  mvn clean
+  130  mvn complie
+  131  mvn clean
+  132  mvn complie
+  133  mvn clean
+  134  mvn package
+  135  ls
+  136  cd target/
+  137  ls
+  138  cd ..
+  139  c
+  140  ls
+  141  cd ..
+  142  ls
+  143  https://github.com/gkdevops/PetClinic.git
+  144  ls
+  145  git clone https://github.com/gkdevops/PetClinic.git
+  146  ls
+  147  cd PetClinic/
+  148  ls
+  149  mvn package
+  150  cd target/
+  151  ls
+  152  get petclinic.war
+  153  git push petclinic.war
+  154  git init
+  155  mkdir git
+  156  git init
+  157  cd g
+  158  ls
+  159  cd git
+  160  git init
+  161  mv /opt/apache-maven-3.6.1/PetClinic/target/petclinic.war .
+  162  ls
+  163  git commit -m "First commit"
+  164  git remote add origin https://github.com/veerukakumanu/helloworldproc.git
+  165  git push origin master
+  166  ls
+  167  mv petclinic.war /home/centos/
+  168  cd
+  169  su centos
+  170  ls
+  171  cd /opt/
+  172  ls
+  173  cd apache-maven-3.6.1
+  174  ls
+  175  cd PetClinic/
+  176  ls
+  177  cd target/
+  178  ls
+  179  rm -rf petclinic.war
+  180  mvn clean
+  181  mvn test
+  182  cd ..
+  183  mvn clean
+  184  mvn compile
+  185  mvn package
+  186  cd target/
+  187  ls
+  188  cd ..
+  189  cd
+  190  cd /opt/
+  191  ls
+  192  cd apache-tomcat-8.5.43
+  193  ls
+  194  cd webapps/
+  195  ls
+  196  mv /opt/apache-maven-3.6.1/PetClinic/target/petclinic.war .
+  197  ls
+  198  cd ..
+  199  ls
+  200  cd bin/
+  201  ls
+  202  ./shutdown.sh
+  203  ./startup.sh
+  204  cd /opt/
+  205  ls
+  206  cd sonarqube/
+  207  ls
+  208  yum install docker-ee-cli-18.09.7-3.el7.x86_64.rpm
+  209  ls
+  210  yum install docker-ee-18.09.7-3.el7.x86_64.rpm
+  211  ls
+  212  yum unsinstall containerd.io-1.2.0-3.el7.x86_64.rpm
+  213  yum uninstall containerd.io-1.2.0-3.el7.x86_64.rpm
+  214  yum clean
+  215  yum
+  216  ls
+  217  docker image
+  218  docker images
+  219  systemctl start docker
+  220  systemctl enable docker
+  221  lls
+  222  ls
+  223  rm -rf *
+  224  ls
+  225  wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/containerd.io-1.2.6-3.3.el7.x86_64.rpm
+  226  yum install containerd.io-1.2.6-3.3.el7.x86_64.rpm
+  227  wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-18.09.7-3.el7.x86_64.rpm
+  228  yum install docker-ee-18.09.7-3.el7.x86_64.rpm
+  229  wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-cli-18.09.7-3.el7.x86_64.rpm
+  230  ls
+  231  yum install docker-ee-cli-18.09.7-3.el7.x86_64.rpm
+  232  s
+  233  ls
+  234  yum install docker-ee-cli-18.09.7-3.el7.x86_64.rpm -y
+  235  #wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-cli-18.09.6-3.el7.x86_64.rpmhttps://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-cli-18.09.6-3.el7.x86_64.rpm\
+  236  wget https://storebits.docker.com/ee/centos/sub-5ee76ce6-650b-4a47-95bc-eb0f162769d9/centos/7/x86_64/stable-18.09/Packages/docker-ee-cli-18.09.6-3.el7.x86_64.rpm
+  237  ls
+  238  yum install docker-ee-cli-18.09.6-3.el7.x86_64.rpm
+  239  yum
+  240  yum reinstall docker-ee-cli-18.09.7-3.el7.x86_64.rpm
+  241  ls
+  242  rm rf *
+  243  y
+  244  ls
+  245  systemctl enable docker
+  246  systemctl start docker
+  247  docker pull sonarqube:latest
+  248  docker container run -d -p 9000:9000 --name sonarqube sonarqube:latest
+  249  docker containers
+  250  docker ps -a
+  251  cd ..
+  252  ls
+  253  cd apache-maven-3.6.1
+  254  ls
+  255  cd PetClinic/
+  256  mvn sonar:sonar   -Dsonar.projectKey=petclinic   -Dsonar.host.url=http://ec2-34-226-121-234.compute-1.amazonaws.com:9000   -Dsonar.login=bf688df5f55bfb1ac6a1fde1d96273a381885714
+  257  history
+
+
+
+
+
+
+
+veeru: bf688df5f55bfb1ac6a1fde1d96273a381885714
+
+
+
